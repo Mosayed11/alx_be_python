@@ -12,9 +12,4 @@ class BankAccount:
         return False
 
     def display_balance(self):
-        bal = self.account_balance
-        if isinstance(bal, float) and bal.is_integer():
-            bal_str = str(int(bal))
-        else:
-            bal_str = str(bal)
-        print(f"Current Balance: ${bal_str}")
+        print(f"Current Balance: ${self.account_balance:.2f}")
